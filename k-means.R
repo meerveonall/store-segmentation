@@ -1,10 +1,5 @@
 library(readxl)
-segment <- read.csv("C:/Users/mervo/OneDrive/Masaüstü/veri_segm.csv")
-
-
-plot(segment$Store,segment$bill_amount)
-plot(segment$Store,segment$geo_reg_code)
-plot(segment$Store,segment$stock_tr)
+segment <- read.csv("veri_segm.csv")
 segment[1]<- NULL
 
 library(cluster)
